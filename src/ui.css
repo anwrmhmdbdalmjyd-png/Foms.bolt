@@ -1,0 +1,57 @@
+/* ── Card ── */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Badge ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.badge-success { background: #def7ec; color: #057a55; }
+.badge-danger  { background: #fde8e8; color: #c81e1e; }
+.badge-warning { background: #fef3c7; color: #92400e; }
+.badge-info    { background: #eff6ff; color: #1a56db; }
+.badge-gray    { background: #f9fafb; color: #6b7280; }
+
+/* ── Buttons (shared across all pages) ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.btn:active { transform: scale(0.98); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+.btn-primary { background: #1a56db; color: white; }
+.btn-primary:hover { background: #1e3a8a; }
+.btn-success { background: #057a55; color: white; }
+.btn-danger  { background: #c81e1e; color: white; }
+.btn-outline { background: white; border-color: #e5e7eb; color: #111827; }
+.btn-outline:hover { background: #f9fafb; }
+.btn-sm { padding: 6px 12px; font-size: 12px; }
