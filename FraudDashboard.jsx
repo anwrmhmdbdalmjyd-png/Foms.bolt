@@ -7,6 +7,7 @@ import {
 } from '../hooks/useFraud';
 import { DataTable } from '../components/ui/DataTable';
 import '../layouts/layout.css';
+import { riskLabel } from './utils/riskLabel';
 
 // ============================================================
 //  src/pages/FraudDashboard.jsx
@@ -175,11 +176,7 @@ export function FraudDashboard() {
 // ── Local helpers (mirror fraud.service.js's getRiskLabel, kept
 //    here too since this is the only page that needs the role
 //    label translation) ────────────────────────────────────────
-function riskLabel(score) {
-  if (score >= 70) return { label: 'عالي', tone: 'danger' };
-  if (score >= 40) return { label: 'متوسط', tone: 'warning' };
-  return { label: 'منخفض', tone: 'success' };
-}
+
 
 function roleLabel(role) {
   if (role === 'admin') return 'أدمن';
