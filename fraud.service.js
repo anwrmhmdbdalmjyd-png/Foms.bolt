@@ -240,16 +240,4 @@ export async function checkGpsClustering(agentId, gpsLocation, thresholdCount = 
 
   return matches.length >= thresholdCount;
 }
-
-/**
- * Convert a numeric risk score into a label + UI tone.
- * Used by FraudDashboard.jsx to render the risk badge.
- *
- * @param {number} score - 0-100
- * @returns {{ label: string, tone: 'danger'|'warning'|'success' }}
- */
-export function getRiskLabel(score) {
-  if (score >= 70) return { label: 'عالي',   tone: 'danger'  };
-  if (score >= 40) return { label: 'متوسط', tone: 'warning' };
-  return              { label: 'منخفض', tone: 'success' };
 }
