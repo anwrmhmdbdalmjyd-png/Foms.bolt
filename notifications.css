@@ -1,0 +1,19 @@
+/* ── Notifications list ── */
+.notif-list { padding: 8px 20px; }
+
+.notif-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.notif-item:last-child { border-bottom: none; }
+.notif-item.read { opacity: 0.55; }
+
+.notif-icon { font-size: 20px; flex-shrink: 0; line-height: 1.2; }
+
+.notif-body { flex: 1; min-width: 0; }
+.notif-title { font-weight: 600; font-size: 13px; color: #111827; }
+.notif-text { font-size: 12px; color: #6b7280; margin-top: 2px; }
+.notif-time { font-size: 11px; color: #9ca3af; margin-top: 4px; }
