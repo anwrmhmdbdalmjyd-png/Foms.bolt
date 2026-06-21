@@ -36,3 +36,102 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+/* ============================================================
+   src/pages/auth.css
+   ============================================================ */
+
+.login-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #1a56db 0%, #1e3a8a 100%);
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.login-logo { font-size: 40px; text-align: center; }
+
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: #111827;
+  margin: 6px 0 2px;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0 0 24px;
+}
+
+.login-error {
+  background: #fde8e8;
+  color: #c81e1e;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.login-submit { width: 100%; padding: 12px; font-size: 14px; margin-top: 6px; }
+
+/* ── Unauthorized (from earlier file) ── */
+.unauthorized-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  background: #f3f4f6;
+}
+
+.unauthorized-icon { font-size: 64px; margin-bottom: 16px; }
+.unauthorized-title { font-size: 22px; font-weight: 800; color: #111827; margin: 0 0 10px; }
+.unauthorized-message {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.7;
+  max-width: 380px;
+  margin: 0 0 28px;
+}
+.unauthorized-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+/* ── Shared field style (used by Login + every Modal form) ── */
+.field { margin-bottom: 16px; }
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus { border-color: #1a56db; }
+.field-error { font-size: 12px; color: #c81e1e; margin-top: 4px; }
